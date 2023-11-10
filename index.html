@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ordering App Proposal</title>
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+
+<body>
+  <section class="page">
+    <section class="headBox">
+      <h2>Super-MC Food Ordering Proposal <sub></sub></h2>
+
+
+    </section>
+
+    <section class="featureBox">
+      <h3>Main Parts <sub></sub></h3>
+      <section>
+        <div>
+          <i class="material-symbols-outlined">person_pin_circle</i>
+          <strong>Customer App</strong>
+          <small>
+            A user-centric experience, offering seamless account creation, intuitive restaurant exploration, and a
+            customizable ordering process.
+          </small>
+        </div>
+        <div>
+          <i class="material-symbols-outlined">motorcycle</i>
+          <strong>Delivery App</strong>
+          <small>
+            A user-centric experience, offering seamless account creation, intuitive restaurant exploration, and a
+            customizable ordering process.
+          </small>
+        </div>
+        <div>
+          <i class="material-symbols-outlined">local_dining</i>
+          <strong>Restaurant App</strong>
+          <small>
+            Streamlined order processing, inventory control, and robust analytics enhance efficiency, enabling informed
+            decisions based on real-time data for improved overall restaurant performance.
+          </small>
+        </div>
+      </section>
+    </section>
+
+    <style>
+      .page {
+        width: 80%;
+        padding: 3vh 10%;
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+        /* border: 2px solid black; */
+        /* height: 100vh; */
+      }
+
+      h3 {
+        font-size: 1.3rem;
+      }
+
+      h3 sub,
+      h2 sub {
+        display: block;
+        height: 3px;
+        background: black;
+      }
+
+      h3 sub {
+        width: 30px;
+      }
+
+      h2 sub {
+        width: 100%;
+      }
+
+      .featureBox,
+      .apiBox {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .featureBox section, .apiBox section{
+        width: 100%;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .featureBox section div,
+      .apiBox section div {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+      }
+
+      .featureBox section div {
+        border: 1px solid salmon;
+      }
+
+      .apiBox section div {
+        border: 1px solid skyblue;
+      }
+
+      .featureBox section div i {
+        font-size: 2rem;
+        color: salmon;
+      }
+      .apiBox section div i{
+        font-size: 2rem;
+        color: skyblue;
+      } 
+    </style>
+
+
+    <section class="apiBox">
+      <h3>API Set <sub></sub></h3>
+
+      <section>
+        <div>
+          <i class="material-symbols-outlined">location_pin</i>
+          <strong>Google Maps API</strong>
+          <small>
+            The Google Maps API in a food ordering app facilitates accurate location-based services, ensuring precise
+            delivery addresses and enhancing the user experience by providing real-time tracking and navigation
+            capabilities.</small>
+        </div>
+        <div>
+          <i class="material-symbols-outlined">smartphone</i>
+          <strong>OTP API</strong>
+          <small>
+            For user registration, login, and secure account management.
+          </small>
+        </div>
+        <div>
+          <i class="material-symbols-outlined">payments</i>
+          <strong>Payment Gateway API</strong>
+          <small>
+            For secure and efficient payment processing, supporting multiple payment methods.
+          </small>
+        </div>
+        <div>
+          <i class="material-symbols-outlined">notifications</i>
+          <strong>Push Notifications API</strong>
+          <small>
+            To send real-time order updates and notifications to users and restaurant owners.
+          </small>
+        </div>
+      </section>
+    </section>
+
+
+    <section class="shotBox">
+      <header>
+        <h3>Preview Box <sub></sub></h3>
+        <div class="prompt">
+          <small>
+            These are previews and not the final design but at the very least you can expect final results that
+            are going to look better and more efficient than these samples that you will also have more control over 
+            in terms of design changes.  
+          </small>
+        </div>
+      </header>
+
+      <section class="imgBox">
+        <img src="prev1.jpg">
+        <img src="prev2.png" alt="">
+        <img src="prev3.png" alt="">
+        <img src="prev4.jpg" alt="">
+      </section>
+    </section>
+
+    <style>
+      .shotBox, .shotBox header{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+      .prompt{
+        padding: 10px;
+        border-radius: 5px;
+        background: rgb(255, 242, 241);
+        color: salmon;
+      }
+      .imgBox{
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 1fr 1fr;
+        /* justify-content: space-around; */
+      }
+      .imgBox img{
+        object-fit: contain;
+        width: 100%;
+      }
+    </style>
+
+
+    <section class="totalBox">
+      <h3>Projected Budget <sub></sub></h3>
+
+      <section>
+        <div>
+          <span style="color: salmon;">API Costs</span>
+          <small>This starts on a free trial and builds itself up as users on the platform increase.</small>
+          <strong>GH₵ 1,000 - 1,500 monthly</strong>
+        </div>
+  
+        <div>
+          <span style="color: salmon;">Development Costs</span>
+          <p>
+            <legend><i class="material-symbols-outlined">person_pin_circle</i> Customer App - GH₵ 1,800</legend>
+            <legend><i class="material-symbols-outlined">motorcycle</i>  Delivery App - GH₵ 1,100  </legend>
+            <legend><i class="material-symbols-outlined">local_dining</i> Restaurant App - GH₵ 1,100</legend>
+          </p>
+  
+          <strong>GH₵ 4,000</strong>
+        </div>
+
+        <div>
+          <span style="color: salmon;">Schedule</span>
+          <i class="material-symbols-outlined">schedule</i>
+          <strong>2 months</strong>
+        </div>
+      </section>
+    </section>
+
+    <style>
+      .totalBox{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+      .totalBox section{
+        display: flex;
+        gap: 2rem;
+      }
+      .totalBox section div{
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        justify-content: space-between;
+        gap: 0.5rem;
+        padding: 15px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      }
+      .totalBox section div strong{
+        font-size: 1.5rem;
+      }
+
+
+      @media all and (max-width:650px){
+        .page{
+          width: 90%;
+          padding: 3vh 5%;
+        }
+        .imgBox{
+          grid-template-columns: 1fr;
+        }
+        .featureBox section, .apiBox section{
+          grid-template-columns: 1fr;
+        }
+        .totalBox section{
+          flex-direction: column;
+        }
+        .totalBox section div{
+          width: 100%;
+        }
+
+      }
+    </style>
+  </section>
+</body>
+
+</html>
